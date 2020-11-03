@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: grid;
+    grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-column-gap: 1%;
+    grid-row-gap: 11px;
+    background-color: #8891A1;
+    color: #ffffff;
+}

@@ -1,1 +1,18 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+      grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+  -ms-grid-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+      grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-column-gap: 1%;
+  grid-row-gap: 11px;
+  background-color: #8891A1;
+  color: #ffffff;
+}
+/*# sourceMappingURL=main.css.map */
