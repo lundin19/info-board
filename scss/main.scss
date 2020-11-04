@@ -6,7 +6,61 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/* Styling af Vejr */
+.weather-container {
+display: grid;
+grid-template-columns:5% repeat(4, 20%);
+grid-template-rows: repeat(6, 20%);
+color: white;
+font-weight: 600;
+background-color: #3F4259;
+height: 450px;
 
+    .time {
+        font-size: 35px;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        justify-self: end;
+        align-self: center;
+        text-align: center;
+    }
+
+    .temp {
+        font-size: 100px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        justify-self: start;
+        align-self: center;
+        letter-spacing: 5px;
+    }
+
+    .summary {
+        font-size: 24px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        justify-self: start;
+        align-self: center;
+    }
+
+    .icon {
+        min-width: 220px;
+        max-width: 230px;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        justify-self: start;
+        margin-top: -15%;
+    }
+}
+
+/* Styling af Bus tider */
 .bus-container {
     width: 400px;
     color: white;
@@ -84,12 +138,15 @@ body {
         align-items: center;
         background-color: #4D5A84;
     }}
-main {
-    display: grid;
-    grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
-    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-    grid-column-gap: 1%;
-    grid-row-gap: 11px;
-    background-color: #8891A1;
-    color: #ffffff;
-}
+    .main-container {
+        background-color: #8891A1
+    ;
+        color: #FFFFFF
+    ;
+        display: grid;
+        grid-template-columns: 2fr repeat(2, 4fr);
+        grid-template-rows: auto;
+        gap: 5px;
+        grid-template-areas: 
+        "data info aktiviteter";
+    }

@@ -7,6 +7,82 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Styling af Vejr */
+.weather-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% (20%)[4];
+      grid-template-columns: 5% repeat(4, 20%);
+  -ms-grid-rows: (20%)[6];
+      grid-template-rows: repeat(6, 20%);
+  color: white;
+  font-weight: 600;
+  background-color: #3F4259;
+  height: 450px;
+}
+
+.weather-container .time {
+  font-size: 35px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 6;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 1;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.weather-container .temp {
+  font-size: 100px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  letter-spacing: 5px;
+}
+
+.weather-container .summary {
+  font-size: 24px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 5;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.weather-container .icon {
+  min-width: 220px;
+  max-width: 230px;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 5;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-top: -15%;
+}
+
+/* Styling af Bus tider */
 .bus-container {
   width: 400px;
   color: white;
@@ -116,16 +192,16 @@ body {
   background-color: #4D5A84;
 }
 
-main {
+.main-container {
+  background-color: #8891A1;
+  color: #FFFFFF;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
-      grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
-  -ms-grid-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-      grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-  grid-column-gap: 1%;
-  grid-row-gap: 11px;
-  background-color: #8891A1;
-  color: #ffffff;
+  -ms-grid-columns: 2fr (4fr)[2];
+      grid-template-columns: 2fr repeat(2, 4fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 5px;
+      grid-template-areas: "data info aktiviteter";
 }
 /*# sourceMappingURL=main.css.map */
