@@ -10,6 +10,7 @@ body {
 .bus-container {
     width: 400px;
     color: white;
+    font-weight: 600;
     
     .tid {
         background-color: #3F4259;
@@ -82,5 +83,13 @@ body {
         text-align: center;
         align-items: center;
         background-color: #4D5A84;
-    }
+    }}
+main {
+    display: grid;
+    grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-column-gap: 1%;
+    grid-row-gap: 11px;
+    background-color: #8891A1;
+    color: #ffffff;
 }
