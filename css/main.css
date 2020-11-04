@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.bus-container {
+  width: 400px;
+  color: white;
+  font-weight: 600;
+}
+
+.bus-container .tid {
+  background-color: #3F4259;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 30%;
+      grid-template-columns: 15% 30%;
+  -ms-grid-rows: 50px;
+      grid-template-rows: 50px;
+  grid-column-gap: -20%;
+  width: 380px;
+  padding-left: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-weight: 300;
+}
+
+.bus-container .tid img {
+  width: 40px;
+  height: 40px;
+}
+
+.bus-container .tid1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25%;
+      grid-template-columns: 25% 25% 25%;
+  -ms-grid-rows: 40px;
+      grid-template-rows: 40px;
+  grid-column-gap: 10%;
+  width: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #4D5A84;
+}
+
+.bus-container .tid2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25%;
+      grid-template-columns: 25% 25% 25%;
+  -ms-grid-rows: 40px;
+      grid-template-rows: 40px;
+  grid-column-gap: 10%;
+  width: 400px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #414B6C;
+}
+
+.bus-container .tid3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25%;
+      grid-template-columns: 25% 25% 25%;
+  -ms-grid-rows: 40px;
+      grid-template-rows: 40px;
+  grid-column-gap: 10%;
+  width: 400px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #4D5A84;
+}
+
+.bus-container .tid4 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25%;
+      grid-template-columns: 25% 25% 25%;
+  -ms-grid-rows: 40px;
+      grid-template-rows: 40px;
+  grid-column-gap: 10%;
+  width: 400px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #414B6C;
+}
+
+.bus-container .tid5 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25%;
+      grid-template-columns: 25% 25% 25%;
+  -ms-grid-rows: 40px;
+      grid-template-rows: 40px;
+  grid-column-gap: 10%;
+  width: 400px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #4D5A84;
+}
+
+.main-container {
+  background-color: #8891A1;
+  color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr (4fr)[2];
+      grid-template-columns: 2fr repeat(2, 4fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 5px;
+      grid-template-areas: "data info aktiviteter";
+}
+
+.data-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: data;
+  width: 100%;
+}
+
+.info-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: info;
+}
+
+.aktiviteter-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: aktiviteter;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #414B6C;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.header h3 {
+  margin-left: 10px;
+}
+
+.header img {
+  height: 30px;
+}
+
+.article .medie-container {
+  height: 300px;
+  width: 100%;
+  background-image: url("/mg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+}
+
+.article .nyheder {
+  background-color: #414B6C;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.article .nyheder .titel {
+  text-transform: uppercase;
+}
+
+.article .nyheder .tekst {
+  margin-top: 20px;
+}

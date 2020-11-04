@@ -7,6 +7,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.logo {
+    width: 300px;
+    display: flex;
+    margin: 0 auto;
+    align-items: end;
+}
+
 .bus-container {
     width: 400px;
     color: white;
@@ -84,12 +91,67 @@ body {
         align-items: center;
         background-color: #4D5A84;
     }}
-main {
-    display: grid;
-    grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
-    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-    grid-column-gap: 1%;
-    grid-row-gap: 11px;
+
+
+
+
+.main-container {
     background-color: #8891A1;
     color: #ffffff;
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 4fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    grid-template-areas: 
+    "data info aktiviteter";
+}
+
+// Grid boxes
+.data-container {
+    grid-area: data;
+    width: 100%;
+}
+.info-container {
+    grid-area: info;
+}
+.aktiviteter-container {
+    grid-area: aktiviteter;
+}
+
+// Global header/label
+.header {
+    display: flex;
+    background-color: #414B6C;
+    padding: 10px;
+    text-transform: uppercase;
+    h3 {
+        margin-left: 10px;
+    }
+    img {
+        height: 30px;
+    }
+}   
+
+// Articles
+.article { 
+    .medie-container {
+        height: 300px;
+        width: 100%;
+        background-image: url('/mg.jpg');
+        background-size: 100% 100%; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        background-origin: content-box;
+    }
+    .nyheder {
+        background-color: #414B6C;
+        padding: 10px;
+        margin:  10px 0;
+        .titel {
+            text-transform: uppercase;
+        }
+        .tekst {
+            margin-top: 20px;
+        }
+    }
 }
