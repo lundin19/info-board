@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bus-container {
+    width: 400px;
+    color: white;
+    font-weight: 600;
+    
+    .tid {
+        background-color: #3F4259;
+        display: grid;
+        grid-template-columns: 15% 30% ;
+        grid-template-rows: 50px;
+        grid-column-gap: -20%;
+        width: 380px;
+        padding-left: 5%;
+        align-items: center;
+        text-align: center;
+        font-weight: 300;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .tid1 {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 40px;
+        grid-column-gap: 10%;
+        width: 400px;
+        align-items: center;
+        text-align: center;
+        background-color: #4D5A84;
+    }
+
+    .tid2 {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 40px;
+        grid-column-gap: 10%;
+        width: 400px;
+        text-align: center;
+        align-items: center;
+        background-color: #414B6C;
+    }
+
+    .tid3 {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 40px;
+        grid-column-gap: 10%;
+        width: 400px;
+        text-align: center;
+        align-items: center;
+        background-color: #4D5A84;
+    }
+
+    .tid4 {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 40px;
+        grid-column-gap: 10%;
+        width: 400px;
+        text-align: center;
+        align-items: center;
+        background-color: #414B6C;
+    }
+
+    .tid5 {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 40px;
+        grid-column-gap: 10%;
+        width: 400px;
+        text-align: center;
+        align-items: center;
+        background-color: #4D5A84;
+    }}
+main {
+    display: grid;
+    grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-column-gap: 1%;
+    grid-row-gap: 11px;
+    background-color: #8891A1;
+    color: #ffffff;
+}
