@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -8,11 +9,15 @@ body {
 }
 /* Styling af Vejr */
 
-.logo {
-    width: 300px;
+.logo-container {
     display: flex;
-    margin: 0 auto;
-    align-items: end;
+    margin: auto;
+    justify-content: center;
+    .logo {
+        width: 300px;
+        display: flex;
+        margin-top: 80px;
+    }
 }
 
 .time {
@@ -51,7 +56,7 @@ body {
     background-color: #8891A1;
     color: #ffffff;
     display: grid;
-    grid-template-columns: 2fr 4fr 4fr;
+    grid-template-columns: 3fr 4fr 4fr;
     grid-template-rows: auto;
     gap: 5px;
     grid-template-areas: 
@@ -63,7 +68,8 @@ body {
     grid-area: data;
     margin: 0 auto;
     width: 100%;
-    background-color: #414B6C;
+    padding: 20px;
+    background-color: #3F4259;
     /* Styling af Bus tider */
 .bus-container {
     display: flex;
@@ -149,19 +155,15 @@ body {
         color: white;
         font-weight: 600;
         background-color: #3F4259;
-        height: 350px;
-        text-align: center;
         .time-date-container {
             display: flex;
-            justify-content: center;
-            gap: 25px;
+            justify-content: space-between;
         }
         .temp-summary-container {
             display: flex;
-            margin: 40px;
-            justify-content: center;
+            margin-top: 40px;
             .col-left {
-                align-items: center;
+                text-align: center;
             }
         }
     }
@@ -215,9 +217,57 @@ body {
         background-color: #8891A1;
         color: #FFFFFF ;
         display: grid;
-        grid-template-columns: 2fr 4fr 4fr;
+        grid-template-columns: 3fr 4fr 4fr;
         grid-template-rows: auto;
         gap: 5px;
         grid-template-areas: 
         "data info aktiviteter";
+    }
+
+    #post{
+        .bus-container{
+            width: 100%;
+            color: white;
+            font-weight: 600;
+            .container-header{
+                width: 100%;
+                height: 50px;
+                align-items: center;
+                font-weight: 300;
+                display: flex;
+                background-color: #3F4259;
+                img{
+                    margin: 0 1rem;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .container_body{
+                .container-content{
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: left;
+                    height: 40px;
+                    align-items: left;
+                    background-color: #4D5A84;
+                    h3:first-of-type {
+                        margin: 0 0 0 1rem;    
+                    }
+                    h3:last-of-type{
+                        text-align: right;
+                        margin: 0 1rem 0 0;  
+                    }
+                }
+                .container-content:first-of-type{
+                    height: 50px;
+                    h3{
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                    }
+                }
+                .container-content:nth-child(odd){
+                    background: #414B6C;
+                }
+            }
+        }
     }

@@ -46,7 +46,8 @@ function buildView(data) {
     const {temperature, skyText} = data.CurrentData;
     // Create current date
     let today = new Date();
-    let tt = Date.now()
+    let hr = today.getHours();
+    let min = today.getMinutes();
     let dd = String(today.getDate()).padStart(2, '0');
     let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
     let yyyy = today.getFullYear();
@@ -54,7 +55,7 @@ function buildView(data) {
     today = `${dd}-${mm}-${yyyy}`;
     // Set value
     document.querySelector('.time').innerHTML = today;
-    document.querySelector('.date').innerHTML = tt;
+    document.querySelector('.date').innerHTML = `${hr}:${min}`;
     document.querySelector('.temp').innerHTML = temperature + '&#176';
     document.querySelector('.summary').innerHTML = skyText;
     

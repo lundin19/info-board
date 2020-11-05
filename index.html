@@ -14,8 +14,8 @@
             <!-- Container til vejr api -->
             <div class="weather-container">
                 <div class="time-date-container">
-                    <p class="time"></p>
                     <p class="date"></p>
+                    <p class="time"></p>
                 </div>
                 <div class="temp-summary-container">
                     <div class="col-left">
@@ -23,50 +23,18 @@
                         <p class="summary"></p>
                     </div>
                     <div class="col-right">
-                        <img class="icon"  src="/img/svg/wi-cloudy.svg"  alt="icon">
+                        <img class="icon"  src="/img/svg/loading.svg"  alt="icon">
                     </div>
                 </div>
             </div>
 
             <!--BUS-->
-            <div class="bus-container">
-                <div class="container-header">
-                    <img src="/img/bus.png">
-                    <h2>Bus tider</h2>
-                </div>
-                <div class="container-header">
-                    <h2>18</h2>
-                    <h2>Kennedy</h2>
-                    <h2>5 Min</h2>
-                </div>
-            
-                <div class="tid2">
-                    <h3>17</h3>
-                    <h3>Saltumvej</h3>
-                    <h3>10 Min</h3>
-                </div>
-            
-                <div class="tid3">
-                    <h3>18</h3>
-                    <h3>Kennedy</h3>
-                    <h3>15 Min</h3>
-                </div>
-            
-                <div class="tid4">
-                    <h3>17</h3>
-                    <h3>Kennedy</h3>
-                    <h3>28 Min</h3>
-                </div>
-            
-                <div class="tid5">
-                    <h3>17</h3>
-                    <h3>Strubjerg</h3>
-                    <h3>34 Min</h3>
-                </div>
-            </div> <!--BUS END-->
+            <div id="post"></div>
 
             <!--LOGO-->
-            <img class="logo" src="/logo.svg" alt="mediehuset techcollege">
+            <div class="logo-container">
+                <img class="logo" src="/logo.svg" alt="mediehuset techcollege">
+            </div>
         </div>
 
 
@@ -119,7 +87,8 @@
         </div>
 
     </main>
-
+    
+    <script src="js/bus.js"></script>
     <script src="/js/vejr.js"></script>
 </body>
 </html>
