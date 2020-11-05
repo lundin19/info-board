@@ -279,17 +279,3 @@ body {
 .article .nyheder .tekst {
   margin-top: 20px;
 }
-
-.main-container {
-  height: 100vh;
-  background-color: #8891A1;
-  color: #FFFFFF;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr (4fr)[2];
-      grid-template-columns: 2fr repeat(2, 4fr);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  gap: 5px;
-      grid-template-areas: "data info aktiviteter";
-}
