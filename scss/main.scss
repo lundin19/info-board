@@ -51,7 +51,7 @@ body {
     background-color: #8891A1;
     color: #ffffff;
     display: grid;
-    //grid-template-columns: 2fr repeat(2, 4fr);
+    grid-template-columns: 2fr 4fr 4fr;
     grid-template-rows: auto;
     gap: 5px;
     grid-template-areas: 
@@ -215,7 +215,7 @@ body {
         background-color: #8891A1;
         color: #FFFFFF ;
         display: grid;
-        grid-template-columns: 2fr repeat(2, 4fr);
+        grid-template-columns: 2fr 4fr 4fr;
         grid-template-rows: auto;
         gap: 5px;
         grid-template-areas: 

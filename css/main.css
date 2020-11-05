@@ -54,6 +54,8 @@ body {
   color: #ffffff;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 2fr 4fr 4fr;
+      grid-template-columns: 2fr 4fr 4fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   gap: 5px;
@@ -286,8 +288,8 @@ body {
   color: #FFFFFF;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr (4fr)[2];
-      grid-template-columns: 2fr repeat(2, 4fr);
+  -ms-grid-columns: 2fr 4fr 4fr;
+      grid-template-columns: 2fr 4fr 4fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   gap: 5px;
