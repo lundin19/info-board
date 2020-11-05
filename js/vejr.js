@@ -17,8 +17,19 @@ fetch(vejrEu)
     return response.json(); 
 })
 .then((data) => {
-    // Send to View section
-    buildView(data)
+    
+    // Declare data 
+    const {temperature, skyText} = data.CurrentData;
+    
+    // Declare new Date
+    let today = new Date();
+    let hr = today.getHours();
+    let min = today.getMinutes();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = today.getFullYear();
+
+    buildView(temperature, skyText, hr, min, dd, mm, yyyy)
 })
 .catch(
 );
@@ -41,16 +52,7 @@ fetch(darkSky)
 
 /// View ///
 
-function buildView(data) {
-    // Declare data 
-    const {temperature, skyText} = data.CurrentData;
-    // Create current date
-    let today = new Date();
-    let hr = today.getHours();
-    let min = today.getMinutes();
-    let dd = String(today.getDate()).padStart(2, '0');
-    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-    let yyyy = today.getFullYear();
+function buildView(temperature, skyText, hr, min, dd, mm, yyyy) {
     // Date Structure
     today = `${dd}-${mm}-${yyyy}`;
     // Set value
