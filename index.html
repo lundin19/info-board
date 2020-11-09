@@ -39,40 +39,14 @@
 
 
         <!--INFO CONTAINER-->
-        <div class="info-container">
-            
-            <article class="article">
-                <!--Header label-->
-                <div class="header">
-                    <img src="/info.svg" alt="info">
-                    <h3>Info</h3>
-                </div>
-                <!--Medie-->
-                <div class="medie-container"></div>
-                    <!--Nyheder--> 
-                    <div class="nyheder">
-                        <p class="dato">04-11-2020</p>
-                        <h2 class="titel">covid</h2>
-                        <p class="tekst">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus
-                            molestiae vel beatae  alias 
-                            officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
-                            natus eveniet ratione temporibus aperiam harum natus eveniet ratione temp
-                            natus eveniet aperiam harum ratione temporibus
-                        </p>
-                    </div>
-                    <div class="nyheder">
-                        <p class="dato">04-11-2020</p>
-                        <h2 class="titel">covid</h2>
-                        <p class="tekst">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus
-                            molestiae vel beatae  alias 
-                            officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
-                            natus eveniet ratione temporibus aperiam harum natus eveniet ratione temp
-                            natus eveniet aperiam harum ratione temporibus
-                        </p>
-                    </div>
-            </article>
+        <div class="middleSection">
+            <div class="info">
+                <i class="fas fa-info-circle"></i>
+                <h3 class="info-header">INFO</h3>
+            </div>
+            <div id="player">
+            </div>
+            <div id="news-container"></div>
         </div>
     
     
@@ -86,9 +60,14 @@
             </div>
             <ul id="activity-widget"></ul>
         </div>
+        <div class="ticker-wrap">
+            <img src="../img/News.svg" alt="">
+        </div>
 
     </main>
-    
+    <script src="../JS/media.js"></script>
+    <script src="../JS/news-slider.js"></script>
+    <script src="../JS/news.js"></script>
     <script src="js/bus.js"></script>
     <script src="/js/vejr.js"></script>
     <script src="/js/activities.js"></script>
