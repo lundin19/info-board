@@ -271,3 +271,104 @@ body {
             }
         }
     }
+
+
+
+/*
+    Style af aktiviteter
+*/
+
+$color-we: #d64643;
+$color-dm: #88a63e;
+$color-gr: #4d72a6;
+$color-mg: #90368b;
+$color-amu: #b4b338;
+$color-gf1: #bdbdbd;
+
+#activity-widget {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+
+    .we {
+        background-color: $color-we;
+    }
+
+    .gr, .ggr {
+        background-color: $color-gr;
+    }
+
+    .dm {
+        background-color: $color-dm;
+    }
+
+    .mg {
+        background-color: $color-mg;
+    }
+
+    .iw {
+        background-color: $color-gf1;
+    }
+
+    .agr, .abi {
+        background-color: $color-amu;
+    }
+
+    .card {
+        width: 100%;
+        height: fit-content;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        color: #DFDFDF;
+
+        &:first-of-type {
+            font-weight: 700;
+
+            > p {
+                margin: 5px 0 5px;
+                padding: 0;
+                border-right: 1px solid #fff;
+
+                &:first-of-type, &:last-of-type {
+                    border: none;
+                }
+            }
+        }
+
+        &:nth-child(1n) {
+            background-color: #3F4259;
+        }
+
+        &:nth-child(2n) {
+            background-color: #4D5A84;
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+
+            &.time {
+                width: 20%;
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            &.location {
+                width:
+                 20%;
+            }
+            &.class {
+                width: 30%;
+            }
+
+            &.topic {
+                width: 30%;
+            }
+        }
+    }
+}

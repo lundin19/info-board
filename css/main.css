@@ -359,3 +359,114 @@ body {
 #post .bus-container .container_body .container-content:nth-child(odd) {
   background: #414B6C;
 }
+
+/*
+    Style af aktiviteter
+*/
+#activity-widget {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#activity-widget .we {
+  background-color: #d64643;
+}
+
+#activity-widget .gr, #activity-widget .ggr {
+  background-color: #4d72a6;
+}
+
+#activity-widget .dm {
+  background-color: #88a63e;
+}
+
+#activity-widget .mg {
+  background-color: #90368b;
+}
+
+#activity-widget .iw {
+  background-color: #bdbdbd;
+}
+
+#activity-widget .agr, #activity-widget .abi {
+  background-color: #b4b338;
+}
+
+#activity-widget .card {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  color: #DFDFDF;
+}
+
+#activity-widget .card:first-of-type {
+  font-weight: 700;
+}
+
+#activity-widget .card:first-of-type > p {
+  margin: 5px 0 5px;
+  padding: 0;
+  border-right: 1px solid #fff;
+}
+
+#activity-widget .card:first-of-type > p:first-of-type, #activity-widget .card:first-of-type > p:last-of-type {
+  border: none;
+}
+
+#activity-widget .card:nth-child(1n) {
+  background-color: #3F4259;
+}
+
+#activity-widget .card:nth-child(2n) {
+  background-color: #4D5A84;
+}
+
+#activity-widget .card p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+}
+
+#activity-widget .card p.time {
+  width: 20%;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#activity-widget .card p.location {
+  width: 20%;
+}
+
+#activity-widget .card p.class {
+  width: 30%;
+}
+
+#activity-widget .card p.topic {
+  width: 30%;
+}
