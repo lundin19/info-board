@@ -7,11 +7,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #8891A1;
 }
-::-webkit-scrollbar {
-  display: none;
-}
+
 /* Styling af Vejr */
 .logo-container {
   display: -webkit-box;
@@ -75,8 +72,8 @@ body {
 }
 
 .data-container {
-  grid-row: 1;
-  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: data;
   margin: 0 auto;
   width: 100%;
@@ -235,15 +232,25 @@ body {
 }
 
 .info-container {
-  grid-row: 1;
-  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: info;
 }
 
 .aktiviteter-container {
-  grid-row: 1;
-  grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: aktiviteter;
+  padding-top: 12px;
+}
+
+.aktiviteter-container .header {
+  background-color: #3F4259;
+  height: 68px;
+  margin-bottom: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header {
@@ -418,7 +425,8 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   text-align: center;
-  color: #DFDFDF;
+  color: #fff;
+  height: 40px;
 }
 
 #activity-widget .card:first-of-type {
@@ -473,6 +481,7 @@ body {
 #activity-widget .card p.topic {
   width: 30%;
 }
+
 .middleSection {
   height: 300px;
   padding: 12px 0 0 13px;
@@ -522,7 +531,7 @@ body {
 }
 
 .middleSection .newsCard {
-  height: 270px;
+  height: 232px;
   margin-bottom: 13px;
   padding-top: 10px;
   width: 660px;
@@ -565,6 +574,7 @@ body {
   position: relative;
   height: 80px;
 }
+
 @-webkit-keyframes ticker {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -599,11 +609,11 @@ body {
           align-items: center;
   position: absolute;
   overflow: hidden;
-  bottom: -0px;
-  right: -1px;
+  right: 0px;
+  bottom: 0;
   height: 71px;
   background-color: #414B6C;
-  width: 1400px;
+  width: 1431px;
 }
 
 .ticker-wrap img {

@@ -173,6 +173,14 @@ body {
 }
 .aktiviteter-container {
     grid-area: aktiviteter;
+    padding-top: 12px;
+
+    .header {
+        background-color: #3F4259;
+        height: 68px;
+        margin-bottom: 13px;
+        align-items: center;
+    }
 }
 
 // Global header/label
@@ -322,7 +330,8 @@ $color-gf1: #bdbdbd;
         display: flex;
         flex-direction: row;
         text-align: center;
-        color: #DFDFDF;
+        color: #fff;
+        height: 40px;
 
         &:first-of-type {
             font-weight: 700;
@@ -485,6 +494,7 @@ $duration: 50s;
     position: absolute;
     overflow: hidden;
     right: 0px;
+    bottom: 0;
     height: 71px;
     background-color: #414B6C;
     width: 1431px;
