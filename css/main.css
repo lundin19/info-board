@@ -531,7 +531,7 @@ body {
 }
 
 .middleSection .newsCard {
-  height: 232px;
+  height: 270px;
   margin-bottom: 13px;
   padding-top: 10px;
   width: 660px;
@@ -613,7 +613,7 @@ body {
   bottom: 0;
   height: 71px;
   background-color: #414B6C;
-  width: 1431px;
+  width: 1399px;
 }
 
 .ticker-wrap img {
