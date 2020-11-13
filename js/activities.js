@@ -122,6 +122,7 @@ async function buildActivitiesView() {
                     <p class="class">${classs}</p> 
                     <p class="topic">${topic}</p>
                 </li>`;
+                break;
             };
         };
     };
