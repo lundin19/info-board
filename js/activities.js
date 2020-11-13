@@ -126,6 +126,16 @@ async function buildActivitiesView() {
             };
         };
     };
+
+    activityWidget.innerHTML += 
+        `<li class="card">
+            <p class="classes we">Webudvikler</p>  
+            <p class="classes abi">AMU</p>  
+            <p class="classes gr">Grafisk Tekniker</p>  
+            <p class="classes dm">Digitale Medier</p>  
+            <p class="classes mg">Mediegrafiker</p>  
+            <p class="classes iw">Anden Uddannelse</p>  
+        </li>`;
 };
 
 buildActivitiesView();

@@ -323,15 +323,25 @@ $color-gf1: #bdbdbd;
         background-color: $color-amu;
     }
 
+    .classes {
+        width: calc(100% / 3);
+        height: 60px
+    }
+
     .card {
         width: 100%;
         height: fit-content;
         list-style: none;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         text-align: center;
         color: #fff;
         height: 40px;
+
+        &:last-child {
+            margin-top: 13px;
+        }
 
         &:first-of-type {
             font-weight: 700;

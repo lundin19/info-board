@@ -411,6 +411,11 @@ body {
   background-color: #b4b338;
 }
 
+#activity-widget .classes {
+  width: calc(100% / 3);
+  height: 60px;
+}
+
 #activity-widget .card {
   width: 100%;
   height: -webkit-fit-content;
@@ -424,9 +429,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
   color: #fff;
   height: 40px;
+}
+
+#activity-widget .card:last-child {
+  margin-top: 13px;
 }
 
 #activity-widget .card:first-of-type {
