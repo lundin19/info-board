@@ -124,4 +124,5 @@ async function buildActivitiesView() {
     };
 };
 
-setInterval(buildActivitiesView(), 1000*60*10);
+buildActivitiesView();
+setInterval(() => {buildActivitiesView()}, 60000);
