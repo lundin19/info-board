@@ -67,7 +67,7 @@ async function loadData() {
 
     //hvis vi er inde for et interval i classTimes så tager vi de filtreret aktiviteter og indsætter(mapper) dem i arrayet activeActivities.
     listOfActivities.map(activity => {
-        const listItem = [activity.datetime, activity.classroom, activity.class, activity.name, activity.friendly_name];
+        const listItem = [activity.timestamp, activity.classroom, activity.class, activity.name, activity.friendly_name];
 
         activeActivities.push(listItem);        
     });
@@ -98,10 +98,9 @@ async function buildActivitiesView() {
     for (item of activeActivities) {
 
         //her deklererer vi et par variabler
-        let date = new Date(item[0]);
+        let date = new Date(item[0] * 1000);
         let time = `${date.getHours()}:${(date.getMinutes()<10?'0':'') + date.getMinutes()}`;
         let classs = `${item[2]}`;
-
 
         //dette gør at hvis der ikke findet et friendly_name så bruger den bare det normale name
         let topic = item[4];
